@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Mon Sep 09 22:02:10 KST 2019
+org.eclipse.jst.jee.server\:tech_blog=D\:\\download\\developer\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\tech_blog
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\SUNGMIN\ KIM\\.m2\\repository\\org\\springframework\\spring-web\\5.1.9.RELEASE\\spring-web-5.1.9.RELEASE.jar=D\:\\download\\developer\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\tech_blog\\WEB-INF\\lib\\spring-web-5.1.9.RELEASE.jar
