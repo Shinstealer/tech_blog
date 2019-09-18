@@ -1,4 +1,4 @@
-<h1>tech_blog</h1>
+<h1>Tech Blog</h1>
 
 <ul>
   <li>FrameWork : Spring version 4</li>
