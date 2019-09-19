@@ -1048,6 +1048,7 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2019-09-18 23:25:13.889
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+<<<<<<< HEAD
 !SESSION 2019-09-19 22:52:17.238 -----------------------------------------------
 eclipse.buildId=3.9.6.201809180749-RELEASE-e49
 java.version=1.8.0_171
@@ -2878,3 +2879,5 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 
 !ENTRY org.eclipse.ui 2 2 2019-09-20 00:38:00.078
 !MESSAGE Invalid preference category path: org.springframework.tooling.boot.java.ls.preferences (bundle: org.springframework.ide.eclipse.boot.dash, page: org.springframework.ide.eclipse.boot.dash.prefs.RemoteAppsPrefsPage)
+=======
+>>>>>>> parent of 24bc5ff... Spring Connection Pool setting ( HikariCP) by JAVA and completed connection tests
