@@ -1,5 +1,0 @@
-package com.shinstealer.persistence;
-
-public class JDBCTests {
-
-}
