@@ -8,8 +8,8 @@ import lombok.Data;
 public class NoteVO {
 	private Long bno;
 	private String title;
-	private String content;
+	private String cotent;
 	private Date regdate;
-	private Date updateDate;
+	private Date updatedate;
 
 }
