@@ -19,6 +19,7 @@ public class NoteMapperTests {
 	@Setter(onMethod_ = @Autowired)
 	private NoteMapper mapper;
 	
+	
 	@Test
 	public void testGetList() {
 		mapper.getList().forEach(note -> log.info(note));
