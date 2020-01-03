@@ -36,5 +36,22 @@ public class NoteMapperTests {
 		mapper.insert(note);
 		log.info(note);
 	}
+	@Test
+	public void testInsertSelectKey() {
+		NoteVO note = new NoteVO();
+		note.setTitle("new test select key");
+		note.setContent("new test select key");
+		
+		mapper.insertSelectKey(note);
+		log.info(note);
+	}
+	
+	@Test
+	public void testRead() {
+		
+		NoteVO note = mapper.read(3L);
+		
+		log.info(note);
+	}
 	
 }

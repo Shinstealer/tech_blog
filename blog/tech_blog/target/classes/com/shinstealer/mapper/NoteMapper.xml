@@ -18,12 +18,16 @@
 	<insert id="insertSelectKey">
 		<selectKey keyProperty="bno" order="BEFORE"
 			resultType="long">
-			select seq_board.nextval from dual
+			select SEQ_NOTE.nextval from dual
 		</selectKey>
 
 		insert into tech_board (bno, title, content)
 		values(SEQ_NOTE.nextval, #{title}, #{content})
 
 	</insert>
+	
+	<select id="read" resultType="com.shinstealer.domain.NoteVO">
+		select * from tech_board where bno = #{bno}
+	</select>
 
 </mapper>
