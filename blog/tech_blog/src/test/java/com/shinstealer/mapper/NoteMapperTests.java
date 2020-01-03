@@ -31,7 +31,7 @@ public class NoteMapperTests {
 		
 		NoteVO note = new NoteVO();
 		note.setTitle("테스트좀 하자");
-		note.setCotent("새로 작성하는 내용");
+		note.setContent("새로 작성하는 내용");
 		
 		mapper.insert(note);
 		log.info(note);
