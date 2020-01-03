@@ -10,4 +10,20 @@
 		]]>
 	</select>
 
+	<insert id="insert">
+		insert into tech_board (bno, title, cotent)
+		values(seq_board.nextval, #{title}, #{cotent})
+	</insert>
+
+	<insert id="insertSelectKey">
+		<selectKey keyProperty="bno" order="BEFORE"
+			resultType="long">
+			select seq_board.nextval from dual
+		</selectKey>
+
+		insert into tech_board (bno, title, cotent)
+		values(seq_board.nextval, #{title}, #{cotent})
+
+	</insert>
+
 </mapper>

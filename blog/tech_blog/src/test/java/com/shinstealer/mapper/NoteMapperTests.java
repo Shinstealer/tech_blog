@@ -7,6 +7,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.shinstealer.config.RootConfig;
+import com.shinstealer.domain.NoteVO;
 
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
@@ -24,4 +25,16 @@ public class NoteMapperTests {
 	public void testGetList() {
 		mapper.getList().forEach(note -> log.info(note));
 	}
+	
+	@Test
+	public void testInert() {
+		
+		NoteVO note = new NoteVO();
+		note.setTitle("테스트좀 하자");
+		note.setCotent("새로 작성하는 내용");
+		
+		mapper.insert(note);
+		log.info(note);
+	}
+	
 }

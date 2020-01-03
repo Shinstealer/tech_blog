@@ -8,7 +8,10 @@ import com.shinstealer.domain.NoteVO;
 
 public interface NoteMapper {
 	
-	//@Select("select * from tech_board where bno > 0")
 	public List<NoteVO> getList();
+	
+	public void insert(NoteVO note);
+	
+	public void insertSelectKey(NoteVO note);
 
 }
