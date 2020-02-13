@@ -15,5 +15,7 @@ public interface NoteMapper {
 	public void insertSelectKey(NoteVO note);
 	
 	public NoteVO read(Long bno);
+	
+	public int delete(Long bno);
 
 }

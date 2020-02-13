@@ -29,5 +29,9 @@
 	<select id="read" resultType="com.shinstealer.domain.NoteVO">
 		select * from tech_board where bno = #{bno}
 	</select>
+	
+	<delete id="delete">
+		delete tech_board where bno = #{bno}
+	</delete>
 
 </mapper>
