@@ -59,5 +59,16 @@ public class NoteMapperTests {
 
 		log.info("delete count: " + mapper.delete(3L));
 	}
+	@Test
+	public void testUpdate() {
+		NoteVO note = new NoteVO();
+		note.setBno(2L);
+		note.setTitle("title");
+		note.setContent("test");
+		
+		int count = mapper.update(note);
+		log.info("count :" + count);
+		
+	}
 
 }

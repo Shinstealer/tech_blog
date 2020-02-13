@@ -18,4 +18,6 @@ public interface NoteMapper {
 	
 	public int delete(Long bno);
 
+	public int update(NoteVO note);
+	
 }

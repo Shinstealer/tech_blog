@@ -22,16 +22,27 @@
 		</selectKey>
 
 		insert into tech_board (bno, title, content)
-		values(SEQ_NOTE.nextval, #{title}, #{content})
+		values(SEQ_NOTE.nextval,
+		#{title}, #{content})
 
 	</insert>
-	
+
 	<select id="read" resultType="com.shinstealer.domain.NoteVO">
-		select * from tech_board where bno = #{bno}
+		select * from tech_board where bno
+		= #{bno}
 	</select>
-	
+
 	<delete id="delete">
 		delete tech_board where bno = #{bno}
 	</delete>
+
+	<update id="update">
+		update tech_board
+		set title = #{title},
+		content = #{content},
+		updatedate = sysdate
+		where bno =#{bno}
+
+	</update>
 
 </mapper>
